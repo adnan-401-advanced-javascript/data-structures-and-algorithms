@@ -12,3 +12,4 @@ Home         | [Home](https://github.com/adnan-401-advanced-javascript/data-stru
  prep 04     | [Promises](https://repl.it/@amuammer/Promises)
  prep 05     | [Async/Await](https://repl.it/@amuammer/AsyncAwait)
  class 01    | [Reverse an array](https://github.com)
+ class 02    | [Shift an array](https://github.com)
