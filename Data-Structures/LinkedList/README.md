@@ -1,15 +1,28 @@
 # Singly Linked List
 linked list is a data structure has just one pointer called **head**;
 
-## Challenge
+# Challenge
 implement Singly Linked List in ES6 and test it
 
-## API
+# UML
+
+<img src = "../../assets/linkedlist.png" />
+
+
+# API
+
+## Classes
 
 <dl>
-<dt><a href="#constructor">constructor()</a></dt>
-<dd><p>[linked list constructor]</p>
-</dd>
+<dt><a href="#LinkedList">LinkedList</a></dt>
+<dd></dd>
+<dt><a href="#Node">Node</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
 <dt><a href="#insert">insert(value)</a></dt>
 <dd><p>[insert methd]</p>
 </dd>
@@ -21,12 +34,27 @@ implement Singly Linked List in ES6 and test it
 </dd>
 </dl>
 
-<a name="constructor"></a>
+<a name="LinkedList"></a>
 
-## constructor()
-[linked list constructor]
+## LinkedList
+**Kind**: global class  
+**Properties**
 
-**Kind**: global function  
+| Name |
+| --- |
+| head |
+
+<a name="Node"></a>
+
+## Node
+**Kind**: global class  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| value | <code>\*</code> |
+| [] | [<code>Node</code>](#Node) |
+
 <a name="insert"></a>
 
 ## insert(value)
@@ -36,7 +64,7 @@ implement Singly Linked List in ES6 and test it
 
 | Param | Type |
 | --- | --- |
-| value | <code>typeless</code> |
+| value | <code>\*</code> |
 
 <a name="includes"></a>
 
@@ -47,7 +75,7 @@ check if LinkedList includes this value
 
 | Param | Type |
 | --- | --- |
-| value | <code>typeless</code> |
+| value | <code>\*</code> |
 
 <a name="toString"></a>
 

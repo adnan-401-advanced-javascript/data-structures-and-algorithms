@@ -2,8 +2,8 @@ const Node = require("./Node.js");
 
 class LinkedList {
   /**
-   * [linked list constructor]
-   * @method constructor
+   * @class LinkedList
+   * @property head
    */
   constructor() {
     this.head = null;
@@ -12,7 +12,7 @@ class LinkedList {
   /**
    * [insert methd]
    * @method insert
-   * @param  {typeless} value
+   * @param  {*} value
    */
   insert(value) { // eslint-disable-line
     const newNode = new Node(value);
@@ -30,7 +30,7 @@ class LinkedList {
   /**
    * check if LinkedList includes this value
    * @method includes
-   * @param  {typeless} value
+   * @param  {*} value
    * @return {boolean}
    */
   includes(value) { // eslint-disable-line
