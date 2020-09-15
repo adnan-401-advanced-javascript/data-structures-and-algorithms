@@ -136,5 +136,40 @@ describe('linked list module', () => {
           expect(newLinkedList.head.next.next.next).toBe(null);
         });
 
+  it('test kthFromEnd of 0', () => {
+    const newLinkedList = new LinkedList();
+    const value = "adnan";
+    newLinkedList.append(value);
+    const returned = newLinkedList.kthFromEnd(0);
+    expect(returned === value);
+  });
+
+  it('test kthFromEnd of multiple elements', () => {
+    const newLinkedList = new LinkedList();
+    const value = "adnan";
+    const value1 = "adnan1";
+    const value2 = "adnan2";
+    const value3 = "adnan3";
+    newLinkedList.append(value);
+    newLinkedList.append(value1);
+    newLinkedList.append(value1);
+    newLinkedList.append(value2);
+    newLinkedList.append(value3);
+    const returned = newLinkedList.kthFromEnd(3);
+    expect(returned === value3);
+  });
+
+  it('test kthFromEnd out of range', () => {
+    const newLinkedList = new LinkedList();
+    const value = "adnan";
+    newLinkedList.append(value);
+    try {
+      newLinkedList.kthFromEnd(1);
+    } catch (error) {
+      expect(error).toBeInstanceOf(Error);
+      expect(error).toHaveProperty('message', 'out of range');
+    }
+
+  });
 
 });
