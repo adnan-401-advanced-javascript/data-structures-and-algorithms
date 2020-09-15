@@ -6,7 +6,7 @@ implement Singly Linked List in ES6 and test it
 
 # UML
 
-<img src = "../../assets/linkedlist.png" />
+<img src = "../../assets/linkedlist-06.png" />
 
 
 # API
@@ -31,6 +31,15 @@ implement Singly Linked List in ES6 and test it
 </dd>
 <dt><a href="#toString">toString()</a> ⇒ <code>String</code></dt>
 <dd><p>[toString to print the linked list]</p>
+</dd>
+<dt><a href="#append">append(value)</a> ⇒ <code><a href="#LinkedList">LinkedList</a></code></dt>
+<dd><p>[append -&gt; insert at the tail]</p>
+</dd>
+<dt><a href="#insertBefore">insertBefore(value, newValue)</a> ⇒ <code><a href="#LinkedList">LinkedList</a></code></dt>
+<dd><p>[insertBefore]</p>
+</dd>
+<dt><a href="#insertAfter">insertAfter(value, newValue)</a> ⇒ <code><a href="#LinkedList">LinkedList</a></code></dt>
+<dd><p>[insertAfter description]</p>
 </dd>
 </dl>
 
@@ -83,3 +92,37 @@ check if LinkedList includes this value
 [toString to print the linked list]
 
 **Kind**: global function  
+<a name="append"></a>
+
+## append(value) ⇒ [<code>LinkedList</code>](#LinkedList)
+[append -> insert at the tail]
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| value | <code>\*</code> |
+
+<a name="insertBefore"></a>
+
+## insertBefore(value, newValue) ⇒ [<code>LinkedList</code>](#LinkedList)
+[insertBefore]
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| value | <code>\*</code> |
+| newValue | <code>\*</code> |
+
+<a name="insertAfter"></a>
+
+## insertAfter(value, newValue) ⇒ [<code>LinkedList</code>](#LinkedList)
+[insertAfter description]
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| value | <code>\*</code> |
+| newValue | <code>\*</code> |
