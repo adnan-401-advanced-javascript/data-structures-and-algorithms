@@ -124,6 +124,31 @@ class LinkedList {
     }
     throw new Error(`${value} not found`);
   }
+
+  /**
+   * return the n-th element of the tail
+   * @method kthFromEnd
+   * @param  {number}   k
+   * @return {*}
+   */
+
+  kthFromEnd(k) {
+    let counter = 0;
+    let current = this.head;
+    while (current) {
+      counter += 1;
+      current = current.next;
+    }
+    if (k > counter - 1) {
+      throw new Error("out of range");
+    }
+    current = this.head;
+    const index = (counter - k) - 1;
+    for (let i = 0; i < index; i += 1) {
+      current = current.next;
+    }
+    return current.value;
+  }
 }
 
 module.exports = LinkedList;

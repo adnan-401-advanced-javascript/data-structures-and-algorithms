@@ -6,7 +6,7 @@ implement Singly Linked List in ES6 and test it
 
 # UML
 
-<img src = "../../assets/linkedlist-06.png" />
+<img src = "../../assets/linkedlist-07.png" />
 
 
 # API
@@ -40,6 +40,9 @@ implement Singly Linked List in ES6 and test it
 </dd>
 <dt><a href="#insertAfter">insertAfter(value, newValue)</a> ⇒ <code><a href="#LinkedList">LinkedList</a></code></dt>
 <dd><p>[insertAfter description]</p>
+</dd>
+<dt><a href="#kthFromEnd">kthFromEnd(k)</a> ⇒ <code>*</code></dt>
+<dd><p>return the n-th element of the tail</p>
 </dd>
 </dl>
 
@@ -126,3 +129,14 @@ check if LinkedList includes this value
 | --- | --- |
 | value | <code>\*</code> |
 | newValue | <code>\*</code> |
+
+<a name="kthFromEnd"></a>
+
+## kthFromEnd(k) ⇒ <code>\*</code>
+return the n-th element of the tail
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| k | <code>number</code> |
