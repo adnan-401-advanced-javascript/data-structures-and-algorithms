@@ -149,6 +149,26 @@ class LinkedList {
     }
     return current.value;
   }
+
+  isPalindrome() {
+    let currentNode = this.head;
+    const arr = [];
+    if (!currentNode) return true;
+    while (currentNode) {
+      arr.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    currentNode = this.head;
+    let i = 0;
+    while (i <= Math.floor(arr.length / 2)) {
+      i += 1;
+      const e = arr.pop().trim();
+      console.log(e, currentNode.value, e === currentNode.value);
+      if (e !== currentNode.value) return false;
+      currentNode = currentNode.next;
+    }
+    return true;
+  }
 }
 
 module.exports = LinkedList;
