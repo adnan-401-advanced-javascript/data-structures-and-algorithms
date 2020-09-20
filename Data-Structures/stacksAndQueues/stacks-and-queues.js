@@ -119,7 +119,7 @@ class Queue {
   }
 
   /**
- * [is the stack Empty]
+ * [is the queue Empty]
  * @method isEmpty
  * @return {Boolean}
  */

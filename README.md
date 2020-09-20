@@ -17,7 +17,7 @@ class 03    | [Binary Search](https://github.com/adnan-401-advanced-javascript/d
 class 04    | [fibonacci](https://repl.it/@amuammer/fibonacci)
 class 05     | [LinkedList](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/LinkedList)
 class 06     | [ll-insertions](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/LinkedList)
-
 class 07     | [ll-kth-from-end](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/LinkedList)
-
 class 08     | [LLZip](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/LLZip)
+class 09    | [isPalindrome](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/LinkedList)
+class 10    | [stacksAndQueues](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/linked-list/Data-Structures/stacksAndQueues)
