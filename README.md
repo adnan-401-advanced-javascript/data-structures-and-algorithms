@@ -21,3 +21,4 @@ class 07     | [ll-kth-from-end](https://github.com/adnan-401-advanced-javascrip
 class 08     | [LLZip](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/LLZip)
 class 09    | [isPalindrome](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/LinkedList)
 class 10    | [stacksAndQueues](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/stacksAndQueues)
+class 11    | [queueWithStacks/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/queueWithStack)
