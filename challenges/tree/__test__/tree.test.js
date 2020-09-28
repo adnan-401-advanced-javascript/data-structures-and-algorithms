@@ -22,14 +22,15 @@ describe("Tests", () => {
   it("test inOrder", () => {
     const node = new Node(5);
     const tree = new BinaryTree(node);
-    tree.add(4);
-    tree.add(3);
-    tree.add(7);
-    tree.add(2);
-    tree.add(6);
-    tree.add(1);
+    tree.add(40);
+    tree.add(30);
+    tree.add(35);
+    tree.add(37);
+    tree.add(45);
+    tree.add(49);
+    tree.add(42);
     tree.inOrder(tree.root);
-    expect(tree.result.toString()).toBe("1,2,3,4,5,6,7");
+    expect(tree.result.toString()).toBe("5,30,35,37,40,42,45,49");
   });
 
   it("test preOrder", () => {
