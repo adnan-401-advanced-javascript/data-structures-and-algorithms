@@ -2,10 +2,21 @@
 const Node = require("./Node.js");
 
 class BinaryTree {
+/**
+ * @class BinaryTree
+ * @prop root {Node}
+ */
   constructor(root = null) {
     this.root = root;
     this.result = [];
   }
+
+  /**
+   * [preOrder]
+   * @method preOrder
+   * @param  {Node} node
+   * @return [Node}  array of Nodes in preOrder
+   */
 
   // Root - Left - Right
   preOrder(node) {
@@ -14,12 +25,26 @@ class BinaryTree {
     node.right && this.preOrder(node.right);
   }
 
+  /**
+   * [inOrder]
+   * @method inOrder
+   * @param  {Node} node
+   * @return [Node}  array of Nodes in inOrder
+   */
+
   // Left - Root - Right
   inOrder(root) {
     root.left && this.inOrder(root.left);
     this.result.push(root.value);
     root.right && this.inOrder(root.right);
   }
+
+  /**
+   * [postOrder]
+   * @method postOrder
+   * @param  {Node} node
+   * @return [Node}  array of Nodes in postOrder
+   */
 
   // Left - Right - Root
   postOrder(node) {
