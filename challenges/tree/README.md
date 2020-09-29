@@ -5,6 +5,9 @@ a tree is a widely used abstract data type that simulates a hierarchical tree st
 to implement BinaryTree stacksAndQueues **preOrder**, **inOrder**, **postOrder**
 and also binary search
 
+## UML
+<img src="../../assets/cc-15.jpeg" />
+
 ## API
 
 
