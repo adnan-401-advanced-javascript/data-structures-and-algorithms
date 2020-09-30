@@ -2,11 +2,13 @@
 a tree is a widely used abstract data type that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
 
 ## Challenge
-to implement BinaryTree **preOrder**, **inOrder**, **postOrder**
-and also binary search
+to implement BinaryTree **findMaximumValue**
 
-## UML
-<img src="../../assets/cc-15.jpeg" />
+## Approach & Efficiency
+Big(o) is o(n)
+
+## WhiteBoard
+<img src="../../assets/cc-16.jpg" />
 
 ## API
 
@@ -58,6 +60,13 @@ and also binary search
 | left | [<code>Node</code>](#Node) | <code></code> | default |
 | right | [<code>Node</code>](#Node) | <code></code> | default |
 
+
+## findMaximumValue() ⇒ <code>\*</code>
+[findMaximumValue]
+
+**Kind**: global function  
+**Returns**: <code>\*</code> - max-value  
+
 <a name="preOrder"></a>
 
 ## preOrder(node) ⇒
@@ -93,3 +102,5 @@ and also binary search
 | Param | Type |
 | --- | --- |
 | node | [<code>Node</code>](#Node) |
+
+<a name="findMaximumValue"></a>
