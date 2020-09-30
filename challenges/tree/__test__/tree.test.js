@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const Node = require("../Node");
 const BinaryTree = require("../tree");
 
