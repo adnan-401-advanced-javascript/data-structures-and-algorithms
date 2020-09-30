@@ -1,6 +1,13 @@
 let i = 1;
 let length = 0;
 const result = [];
+/**
+ * [duckDuckGoose]
+ * @method duckDuckGoose
+ * @param  {Array}       [strings=[]] "list of strings"
+ * @param  {number}      k            "number of rounds"
+ * @return {array}                   "result"
+ */
 function duckDuckGoose(strings = [], k) {
   if (strings.length > length) length = strings.length;
   while (i < length) {
