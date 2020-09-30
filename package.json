@@ -4,7 +4,8 @@
   "description": "Code challenges 401",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+     "lint": "eslint './**/*.js' --ignore-pattern node_modules/"
   },
   "repository": {
     "type": "git",

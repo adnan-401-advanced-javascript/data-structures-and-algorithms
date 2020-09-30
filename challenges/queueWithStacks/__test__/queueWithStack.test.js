@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const PseudoQueue = require("../queue-with-stacks.js");
 
 describe("Queue Tests", () => {
