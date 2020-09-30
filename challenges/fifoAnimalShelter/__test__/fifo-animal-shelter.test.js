@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const AnimalShelter = require("../fifo-animal-shelter.js");
 
 describe("Queue Tests", () => {
@@ -30,5 +32,4 @@ describe("Queue Tests", () => {
       expect(e.message).toBe("pref must be cat or dog");
     }
   });
-
 });

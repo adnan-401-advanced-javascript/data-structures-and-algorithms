@@ -23,3 +23,6 @@ class 09    | [isPalindrome](https://github.com/adnan-401-advanced-javascript/da
 class 10    | [stacksAndQueues](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/stacksAndQueues)
 class 11    | [queueWithStacks/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/queueWithStack)
 class 12    | [fifoAnimalShelter/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fifoAnimalShelter)
+class 13    | [multiBracketValidation/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/multiBracketValidation)
+class 14    | [DuckDuckGoose/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/DuckDuckGoose)
+class 15    | [tree/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/tree)

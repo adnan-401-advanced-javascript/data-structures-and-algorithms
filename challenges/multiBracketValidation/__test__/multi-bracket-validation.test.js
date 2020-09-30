@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const bracketsValidator = require("../multi-bracket-validation.js");
 
 describe("Tests", () => {
