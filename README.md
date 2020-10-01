@@ -27,3 +27,4 @@ class 13    | [multiBracketValidation/](https://github.com/adnan-401-advanced-ja
 class 14    | [DuckDuckGoose/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/DuckDuckGoose)
 class 15    | [tree/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/tree)
 class 16    | [findMaxValue/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/treeFindMax)
+class 19    | [leafsEqualityTree/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/leafsEqualityTree)
