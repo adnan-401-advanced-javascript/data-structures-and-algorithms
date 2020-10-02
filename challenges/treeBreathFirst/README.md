@@ -8,7 +8,7 @@ to implement BinaryTree **BreathFirst**
 Big(o) is o(n) and O(n) cuz of using queue as a helper
 
 ## WhiteBoard
-<img src="../../assets/cc-16.jpg" />
+<img src="../../assets/cc-17.jpeg" />
 
 ## API
 
