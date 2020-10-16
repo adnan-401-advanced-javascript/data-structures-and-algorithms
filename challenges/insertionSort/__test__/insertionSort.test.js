@@ -1,3 +1,4 @@
+/* eslint-disable no-undef  */
 const insertionSort = require("../insertionSort");
 
 describe("Sort array", () => {
