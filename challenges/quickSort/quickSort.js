@@ -51,7 +51,4 @@ function quickSort(arr, left, right) {
   return arr;
 }
 
-// first call to quick sort
-const items = [5, 3, 7, 6, 2, 9];
-const sortedArray = quickSort(items, 0, items.length - 1);
-console.log(sortedArray); // prints [2,3,5,6,7,9]
+module.exports = quickSort;
