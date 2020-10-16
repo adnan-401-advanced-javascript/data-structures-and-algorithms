@@ -5,7 +5,7 @@ implement the mergeSort algorithm
 Create a function to take an array and divide it recursionally and return the elements sorted
 
 ## Approach & Efficiency
-BigO is **O(n*log(n))** two nested loops
+BigO is **O(n*log(n))**
 
 ## Solution
 <!-- Embedded whiteboard image -->
