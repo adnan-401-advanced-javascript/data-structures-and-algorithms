@@ -1,54 +1,52 @@
 /* eslint-disable no-param-reassign */
-function swap(arr, leftIndex, rightIndex) {
-  console.log("swap", arr[leftIndex], arr[rightIndex]);
-  const temp = arr[leftIndex];
-  arr[leftIndex] = arr[rightIndex];
-  arr[rightIndex] = temp;
-}
-function partition(arr, left, right) {
-  const pivot = arr[Math.floor((right + left) / 2)]; // middle element
-  console.log("---partition", arr, left, right);
-  console.log("!!!pivot", pivot);
 
-  let i = left; // left pointer
-  let j = right; // right pointer
-  while (i <= j) {
-    while (arr[i] < pivot) {
-      console.log("arr[i] < pivot", arr[i], "<", pivot);
-      i += 1;
-      console.log("i", i);
+function swap(arr, left, right) {
+  console.log("swap", arr[left], arr[right]);
+  const temp = arr[left];
+  arr[left] = arr[right];
+  arr[right] = temp;
+}
+
+function partition(arr, left, right) {
+  console.log("left", left, "right", right, "--", arr);
+  const pivot = Math.floor((left + right) / 2);
+  console.log("pivot", arr[pivot]);
+
+  while (left < right) {
+    while (arr[left] < arr[pivot]) {
+      left += 1;
     }
-    console.log("--");
-    while (arr[j] > pivot) {
-      console.log("arr[j] > pivot", arr[j], ">", pivot);
-      j -= 1;
-      console.log("j", j);
+
+    while (arr[right] > arr[pivot]) {
+      right -= 1;
     }
-    if (i <= j) {
-      swap(arr, i, j); // sawpping two elements
-      i += 1;
-      j -= 1;
-      console.log("i", i);
-      console.log("j", j);
+
+    if (left <= right) {
+      swap(arr, left, right);
+      left += 1;
+      right -= 1;
     }
   }
-  console.log("after---", arr);
-  return i;
+
+  return left;
 }
 
 function quickSort(arr, left, right) {
-  let index;
-  if (arr.length > 1) {
-    index = partition(arr, left, right); // index returned from partition
-    console.log("index", index);
-    if (left < index - 1) { // more elements on the left side of the pivot
-      quickSort(arr, left, index - 1);
-    }
-    if (index < right) { // more elements on the right side of the pivot
-      quickSort(arr, index, right);
-    }
+  const position = partition(arr, left, right);
+  console.log("splitIndex----", position);
+  if (left < position - 1) {
+    quickSort(arr, left, position - 1);
+  }
+  // sort the right, moving the pivot to the right each time
+  if (right > position) {
+    quickSort(arr, position, right);
   }
   return arr;
 }
 
 module.exports = quickSort;
+
+// const arr = [3, 4, 6, 8, 7, 1, 2, 5];
+const arr = [8, 4, 23, 42, 16, 15];
+
+console.log(quickSort(arr, 0, arr.length - 1));
