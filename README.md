@@ -30,3 +30,8 @@ class 16    | [findMaxValue/](https://github.com/adnan-401-advanced-javascript/d
 class 17    | [treeBreathFirst](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/treeBreathFirst)
 class 18    | [fizzBuzzTree/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fizzBuzzTree)
 class 19    | [leafsEqualityTree/](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/leafsEqualityTree)
+class 26    | [insertionSort](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/insertionSort).
+class 27    | [mergeSort](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/mergeSort).
+class 28    | [quickSort](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/quickSort).
+class 30    | [Hashtable](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/HashTable).
+class 31    | [repeatedWord](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/repeated-word).
