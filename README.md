@@ -36,3 +36,4 @@ class 28    | [quickSort](https://github.com/adnan-401-advanced-javascript/data-
 class 30    | [Hashtable](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/HashTable).
 class 31    | [repeatedWord](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/repeated-word).
 class 32    | [treeIntersection](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/treeIntersection).
+class 33    | [left-join](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/left-join)

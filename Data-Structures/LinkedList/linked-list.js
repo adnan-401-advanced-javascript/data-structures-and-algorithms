@@ -5,8 +5,8 @@ class LinkedList {
    * @class LinkedList
    * @property head
    */
-  constructor() {
-    this.head = null;
+  constructor(root = null) {
+    this.head = root;
   }
 
   /**

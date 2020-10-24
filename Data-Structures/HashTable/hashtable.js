@@ -71,4 +71,33 @@ module.exports = class HashTable {
       return results;
     }
   }
+
+  set(key, linkedListHead) {
+    const index = this.hash(key);
+    const entry = this.entries[index];
+    if (!entry) {
+      this.entries[index] = new LinkedList();
+    }
+    this.entries[index].head = linkedListHead;
+  }
+
+  getValues(key) { // return LinkedList head
+    const index = this.hash(key);
+    const entry = this.entries[index];
+    if (entry) {
+      return entry.head;
+    }
+  }
+
+  append(key, node) {
+    const index = this.hash(key);
+    const entry = this.entries[index];
+    if (entry) {
+      let currentNode = entry.head;
+      while (currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+    }
+  }
 };
