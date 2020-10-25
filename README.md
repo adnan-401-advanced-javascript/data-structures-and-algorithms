@@ -38,3 +38,4 @@ class 31    | [repeatedWord](https://github.com/adnan-401-advanced-javascript/da
 class 32    | [treeIntersection](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/treeIntersection).
 class 33    | [left-join](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/left-join)
 class 34    | [unique-characters-string](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/unique-characters-string)
+class 35    | [Graph](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/Graph)
