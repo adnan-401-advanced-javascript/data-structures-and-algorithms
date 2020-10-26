@@ -168,6 +168,88 @@ class LinkedList {
     }
     return true;
   }
+
+  remove(val) {
+    let current = this.head;
+    // case-1
+    if (current.value === val) {
+      this.head = current.next;
+    } else {
+      let previous = current;
+      while (current.next) {
+        // case-3
+        if (current.value === val) {
+          previous.next = current.next;
+          break;
+        }
+        previous = current;
+        current = current.next;
+      }
+      // case -2
+      if (current.value === val) {
+        previous.next == null; // eslint-disable-line
+      }
+    }
+  }
+
+  findMiddle() {
+    let current = this.head;
+    let middle = this.head;
+    let length = 0;
+    while (current.next) {
+      if (length % 2 === 0 && length !== 0) {
+        middle = middle.next;
+      }
+      length += 1;
+      current = current.next;
+    }
+    return middle.value;
+  }
+
+  reverseUsingItartion() {
+    let current = this.head;
+    let forward = null;
+    let previous = null;
+    while (current.next) {
+      forward = current.next;
+      current.next = previous;
+      previous = current;
+      current = forward;
+    }
+    this.head = forward;
+    this.head.next = previous;
+  }
+
+  // eslint-disable-next-line
+  static mergeTwoLists(l1, l2) {
+    let head1 = l1.head;
+    let head2 = l2.head;
+    const dummyHead = new Node(0);
+    const newLinkedList = new LinkedList(dummyHead);
+    let currentNode = dummyHead;
+
+    while (head1 !== null && head2 !== null) {
+      if (head1.value < head2.value) {
+        currentNode.next = head1;
+        head1 = head1.next;
+      } else {
+        currentNode.next = head2;
+        head2 = head2.next;
+      }
+      currentNode = currentNode.next;
+    }
+
+    // append where stopped
+    if (head1 !== null) {
+      currentNode.next = head1;
+    } else if (head2 !== null) {
+      currentNode.next = head2;
+    }
+
+    newLinkedList.head = newLinkedList.head.next; // remove dummyHead
+
+    return newLinkedList;
+  }
 }
 
 module.exports = LinkedList;
