@@ -1,4 +1,5 @@
 const Edge = require("./Edge");
+const Vertex = require("./Vertex");
 
 class Graph {
   /**
@@ -64,6 +65,34 @@ class Graph {
   getSize() {
     return this.list.size;
   }
+
+  static getAdjacencyList(verticesValues, adjacencyMatrix) {
+    const g = new Graph();
+    const vertices = verticesValues.map((value) => g.addVertex(new Vertex(value)));
+
+    for (let i = 0; i < adjacencyMatrix.length; i += 1) {
+      for (let j = 0; j < adjacencyMatrix[i].length; j += 1) {
+        if (adjacencyMatrix[i][j]) {
+          g.addEdge(vertices[i], vertices[j]);
+        }
+      }
+    }
+    return vertices.map((vertex) => g.getNeighbours(vertex).map((edge) => edge.vertex.value));
+  }
 }
+
+const verticesValues = ["a", "b", "c", "d", "e"];
+
+const results = Graph.getAdjacencyList(verticesValues, [
+  [0, 1, 0, 0, 1],
+  [1, 0, 1, 1, 0],
+  [0, 1, 0, 1, 0],
+  [0, 1, 1, 0, 1],
+  [1, 0, 0, 1, 0],
+]);
+
+results.forEach((list, i) => {
+  console.log(verticesValues[i], "| ->", list.join(" -> "));
+});
 
 module.exports = Graph;
