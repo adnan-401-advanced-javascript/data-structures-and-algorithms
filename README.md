@@ -39,4 +39,4 @@ class 32    | [treeIntersection](https://github.com/adnan-401-advanced-javascrip
 class 33    | [left-join](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/left-join)
 class 34    | [unique-characters-string](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/unique-characters-string)
 class 35    | [Graph](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/Graph)
-class 39    | [getAjacencyList](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/Graph)
+class 39    | [getAdjacencyList](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms/tree/master/Data-Structures/Graph)
