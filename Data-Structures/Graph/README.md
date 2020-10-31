@@ -123,3 +123,7 @@ Definning a class for Vertex, a class for edges, and a class for the graph which
 [getSize description]
 
 **Kind**: global function
+
+## BreadthFirst(startNode) ⇒ <code>vertex</code>
+
+**Kind**: global function
