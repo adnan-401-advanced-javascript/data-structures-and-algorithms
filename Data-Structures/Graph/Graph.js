@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+
 const Edge = require("./Edge");
 const Vertex = require("./Vertex");
 
@@ -79,8 +81,30 @@ class Graph {
     }
     return vertices.map((vertex) => g.getNeighbours(vertex).map((edge) => edge.vertex.value));
   }
+
+  BreadthFirst(startNode) {
+    const queue = [];
+    const vistedNodes = new Set();
+
+    queue.push(startNode);
+    vistedNodes.add(startNode);
+
+    while (queue.length) {
+      const currentNode = queue.shift();
+      const neighbors = this.getNeighbours(currentNode);
+      for (const neighborEdge of neighbors) {
+        const neighborNode = neighborEdge.vertex;
+        if (!vistedNodes.has(neighborNode)) {
+          vistedNodes.add(neighborNode);
+          queue.push(neighborNode);
+        }
+      }
+    }
+    return vistedNodes;
+  }
 }
 
+/*
 const verticesValues = ["a", "b", "c", "d", "e"];
 
 const results = Graph.getAdjacencyList(verticesValues, [
@@ -94,5 +118,6 @@ const results = Graph.getAdjacencyList(verticesValues, [
 results.forEach((list, i) => {
   console.log(verticesValues[i], "| ->", list.join(" -> "));
 });
+*/
 
 module.exports = Graph;
